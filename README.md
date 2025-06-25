@@ -15,7 +15,7 @@ cd EAN13-Generator
 pip install -r requirements.txt
 ```
 
-## Nutzung
+## 👟 Nutzung
 1. Server starten: ```python main.py```
 2. Barcode senden: ```http://localhost:5000/4006381333931```
 
