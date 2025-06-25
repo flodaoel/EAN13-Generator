@@ -9,8 +9,8 @@ app = Flask(__name__)
 
 @app.route('/<ean>')
 def generate_barcode(ean):
-    if not ean.isdigit() or len(ean) > 13:
-        return abort(400, description="Ungültige EAN-13 Nummer")
+    if not ean.isdigit() or len(ean) != 12:
+        return abort(400, description="EAN-13 Nummer muss genau 12 Ziffern haben (die 13. wird berechnet)")
 
     try:
         EAN = barcode.get_barcode_class('ean13')
