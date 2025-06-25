@@ -11,7 +11,7 @@ Ein einfacher Flask-Webservice zur Generierung von EAN-13-Barcodes als PNG-Bilde
 
 ```bash
 git clone https://github.com/flodaoel/EAN13-Generator.git
-cd flask-ean13-barcode-generator
+cd EAN13-Generator
 pip install -r requirements.txt
 ```
 
